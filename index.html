@@ -7,21 +7,33 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Coninma</title>
 </head>
-
 <body>
-   <nav class="mobile-nav">
-    <div class="nav-buttons">
-      <a href="#" class="nav-button">Botão 1</a>
-      <a href="#" class="nav-button">Botão 2</a>
-      <a href="#" class="nav-button">Botão 3</a>
-    </div>
-  </nav>
+    <nav class="mobile-nav">
+      <div class="nav-buttons">
+        <a href="#" class="nav-button"><img src="assets/icon/Home.png" alt="Home"></a>
+        <a href="index.html" class="nav-button"><img src="assets/icon/" alt=""></a>
+        <a href="#" class="nav-button" id="menu-button"><img src="assets/icon/menu.png" alt="Menu"></a>
+      </div>
+        <div class="menu-list" id="menu-list">
+        <a id="close-button">Fechar</a>
+          <a href="cronogram.html">Calendário</a>
+          <a href="keynotes.html">Participantes</a>
+          <a href="submission.html">Subimissão de Artigos</a>
+          <a href="listener.html">Inscrição Ouvinte</a>
+          <a href="hackatoon.html">Inscrição Hackatoon</a> 
+          <a href="about.html">Sobre</a>      
+      </div>
+    </nav>
   <nav class="desktop-nav">
-    <a href="#" class="nav-logo">Logo</a>
+    <a href="index.html" class="nav-logo"> <span><img src="assets/Logo/CONINMA 1.png" alt=""></span></a>
     <div class="nav-links">
-      <a href="#" class="nav-link">Link 1</a>
-      <a href="#" class="nav-link">Link 2</a>
-      <a href="#" class="nav-link">Link 3</a>
+      
+      <a href="cronogram.html" class="nav-button">Calendário</a>
+      <a href="keynotes.html" class="nav-button">Participantes</a>
+      <a href="submission.html" class="nav-button">Subimissão de Artigos</a>
+      <a href="listener.html" class="nav-button">Inscrição Ouvinte</a>
+      <a href="hackatoon.html" class="nav-button">Inscrição Hackatoon</a>
+      <a href="about.html" class="nav-button">Sobre</a>
     </div>
   </nav>
   <header>
@@ -35,21 +47,21 @@
       <h2>FATEC-MARÍLIA</h2>
     </div>
 
-    <section class="contagem-regress">
+    <section class="contagem-regress" onload="updateCountdown()">
       <div>
         <h3>Contador</h3>
       </div>
       <div class="countdown-container">
         <div class="countdown-item-days">
-          <div id="days" class="countdown-number">00</div>
+          <div id="dayscont" class="countdown-number">--</div>
           <div class="countdown-label">dias</div>
         </div>
         <div class="countdown-item">
-          <div id="hours" class="countdown-number">00</div>
+          <div id="hourscont" class="countdown-number">--</div>
           <div class="countdown-label">horas</div>
         </div>
         <div class="countdown-item">
-          <div id="minutes" class="countdown-number">00</div>
+          <div id="minutescont" class="countdown-number">--</div>
           <div class="countdown-label">minutos</div>
         </div>
       </div>
@@ -59,37 +71,12 @@
   <footer>
   </footer>
 
-  <script>
-    //Contador
+  <script rel="script" href="js/script.js">
+
+/*CONTADOR*/
 
     // Definindo a data final da contagem regressiva (formato: ano, mês - 1, dia, hora, minuto, segundo)
-    var endDate = new Date(2024, 4, 20, 0, 0,);
-
-    function updateCountdown() {
-      var now = new Date();
-      var timeDiff = endDate - now;
-
-      if (timeDiff <= 0) {
-        document.getElementById('days').innerText = '00';
-        document.getElementById('hours').innerText = '00';
-        document.getElementById('minutes').innerText = '00';
-      } else {
-        var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-
-        document.getElementById('days').innerText = padZero(days);
-        document.getElementById('hours').innerText = padZero(hours);
-        document.getElementById('minutes').innerText = padZero(minutes);
-      }
-    }
-
-    function padZero(num) {
-      return (num < 10 ? '0' : '') + num;
-    }
-
-    // Atualizando a contagem regressiva a cada segundo
-    setInterval(updateCountdown, 1000);
+    
   </script>
 </body>
 

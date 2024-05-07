@@ -229,9 +229,113 @@ h1 {
   .desktop-nav {
     display: none;
   }
+
+      
+    /* Estilos para o menu */
+
+
+
+    .mobile-nav {
+        display: none;
+      }
+      
+      .nav-buttons {
+        display: flex;
+        justify-content: center;
+
+    }
+      
+      .nav-button {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #fff;
+      }
+      
+      .nav-button img {
+        width: 24px;
+        height: auto;
+      }
+      
+      .menu-list {
+        display: none;
+        background-color: #8d8d8d;
+        padding: 10px;
+        border-radius: 5px;
+        align-items: center;
+      }
+      
+      .menu-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+      }
+      
+      .menu-list {
+        margin-bottom: 5px;
+      }
+      
+      .menu-list a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding: 5px 10px;
+        border-radius: 3px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .menu-list a:hover {
+        background-color: #ddd;
+      }
+      
+      /* Estilos para dispositivos menores */
+      @media screen and (max-width: 768px) {
+        .mobile-nav {
+          display: block;
+        }
+        
+        .nav-button {
+          margin-right: 0;
+        }
+      }
   
   /* Estilos para PCs */
   @media (min-width: 768px) {
+   /*main calendar*/
+   .calendarcontainer{
+    display: grid;
+    width: 100vh;
+   }
+   .datacontainer{
+    margin-left: 200px;
+    display: grid;
+    column-gap: 200px;
+   }
+   #b20{
+    grid-row: 1;
+    grid-column: 1;
+   }
+   #d20{
+    grid-row: 2; /* Ocupa a primeira linha */
+    grid-column: 0;
+   }
+   #b21{
+    grid-row: 1;
+    grid-column: 2;
+   }
+   #d21{
+    grid-row: 2; /* Ocupa a primeira linha */
+    grid-column: 2;
+   }
+   #b22{
+    grid-row: 1;
+    grid-column: 3;
+   }
+   #d22{
+    grid-row: 2; /* Ocupa a primeira linha */
+    grid-column: 3;
+    margin: 10px;
+   }
     .mobile-nav {
       display: none; 
     }
@@ -270,4 +374,8 @@ h1 {
       color: #fff;
       margin-left: 10px;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 18f59df (alteracao)
   }

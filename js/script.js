@@ -40,4 +40,43 @@ botao22.addEventListener("click", function() {
 // Definir o botão 20 como padrão inicialmente (adicionando uma classe)
 botao20.classList.add("botao-padrao");
 
+<<<<<<< HEAD
 
+=======
+/*
+Contador
+ */
+
+let dataFinal = new Date();
+let teste = document.getElementById("dayscont");
+console.log(dataFinal)
+/*Carrossel Passador*/
+    let slide = document.querySelectorAll('.slide-container');
+    let carousel = 0;
+    
+    function next(){
+        slide[carousel].classList.remove('active');
+        carousel = (carousel + 1) % slide.length;
+        slide[carousel].classList.add('active');
+    }
+    
+    function prev(){
+        slide[carousel].classList.remove('active');
+        carousel = (carousel - 1 + slide.length) % slide.length;
+        slide[carousel].classList.add('active');
+    }
+
+
+
+ // Função para alternar a visibilidade do menu ao clicar no botão do menu
+ document.getElementById('menu-button').addEventListener('click', function() {
+  var menuList = document.getElementById('menu-list');
+  menuList.style.display = (menuList.style.display === 'block') ? 'none' : 'block';
+});
+
+// Função para fechar o menu ao clicar no botão "Fechar"
+document.getElementById('close-button').addEventListener('click', function() {
+  var menuList = document.getElementById('menu-list');
+  menuList.style.display = 'none';
+});
+>>>>>>> 18f59df (alteracao)
