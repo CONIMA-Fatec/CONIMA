@@ -1,3 +1,4 @@
+
 /* Script do Calendário */
 var conteudo20 = document.getElementById("d20");
 var conteudo21 = document.getElementById("d21");
@@ -38,3 +39,5 @@ botao22.addEventListener("click", function() {
 
 // Definir o botão 20 como padrão inicialmente (adicionando uma classe)
 botao20.classList.add("botao-padrao");
+
+
