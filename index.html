@@ -10,7 +10,7 @@
 <body>
     <nav class="mobile-nav">
       <div class="nav-buttons">
-        <a href="#" class="nav-button"><img src="assets/icon/Home.png" alt="Home"></a>
+        <a href="submission.html" class="nav-button"><img src="assets/icon/subm.png" alt="Subimissão de Artigos"></a>
         <a href="index.html" class="nav-button"><img src="assets/icon/" alt=""></a>
         <a href="#" class="nav-button" id="menu-button"><img src="assets/icon/menu.png" alt="Menu"></a>
       </div>
@@ -20,7 +20,7 @@
           <a href="keynotes.html">Participantes</a>
           <a href="submission.html">Subimissão de Artigos</a>
           <a href="listener.html">Inscrição Ouvinte</a>
-          <a href="hackatoon.html">Inscrição Hackatoon</a> 
+          <a href="HackaTec.html">Inscrição HackaTec</a> 
           <a href="about.html">Sobre</a>      
       </div>
     </nav>
@@ -32,7 +32,7 @@
       <a href="keynotes.html" class="nav-button">Participantes</a>
       <a href="submission.html" class="nav-button">Subimissão de Artigos</a>
       <a href="listener.html" class="nav-button">Inscrição Ouvinte</a>
-      <a href="hackatoon.html" class="nav-button">Inscrição Hackatoon</a>
+      <a href="HackaTec.html" class="nav-button">Inscrição HackaTec</a>
       <a href="about.html" class="nav-button">Sobre</a>
     </div>
   </nav>
@@ -73,10 +73,17 @@
 
   <script rel="script" href="js/script.js">
 
-/*CONTADOR*/
+     // Função para alternar a visibilidade do menu ao clicar no botão do menu
+ document.getElementById('menu-button').addEventListener('click', function() {
+  var menuList = document.getElementById('menu-list');
+  menuList.style.display = (menuList.style.display === 'block') ? 'none' : 'block';
+});
 
-    // Definindo a data final da contagem regressiva (formato: ano, mês - 1, dia, hora, minuto, segundo)
-    
+// Função para fechar o menu ao clicar no botão "Fechar"
+document.getElementById('close-button').addEventListener('click', function() {
+  var menuList = document.getElementById('menu-list');
+  menuList.style.display = 'none';
+});
   </script>
 </body>
 

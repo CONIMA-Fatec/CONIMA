@@ -210,7 +210,7 @@ h1 {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #8d8d8d;
+    background-color: #88085B;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -258,7 +258,7 @@ h1 {
       
       .menu-list {
         display: none;
-        background-color: #8d8d8d;
+        background-color: #72074d;
         padding: 10px;
         border-radius: 5px;
         align-items: center;
@@ -349,7 +349,7 @@ h1 {
       top: 0;
       left: 0;
       width: 100%;
-      background-color: #8d8d8d;
+      background-color: #88085B;
       display: flex;
       justify-content: space-between;
       padding: 10px;
@@ -374,8 +374,3 @@ h1 {
       color: #fff;
       margin-left: 10px;
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 18f59df (alteracao)
-  }
