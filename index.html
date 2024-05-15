@@ -42,26 +42,24 @@
       APLICAÇÕES DE APRENDIZADO DE <span class="letterorange">MÁ</span>QUINA</h1>
   </header>
   <main>
-
     <div class="subtitle">
       <h2>FATEC-MARÍLIA</h2>
     </div>
-
-    <section class="contagem-regress" onload="updateCountdown()">
+    <section class="contagem-regress">
       <div>
         <h3>Contador</h3>
       </div>
       <div class="countdown-container">
         <div class="countdown-item-days">
-          <div id="dayscont" class="countdown-number">--</div>
+          <div id="days" class="countdown-number">00</div>
           <div class="countdown-label">dias</div>
         </div>
         <div class="countdown-item">
-          <div id="hourscont" class="countdown-number">--</div>
+          <div id="hours" class="countdown-number">00</div>
           <div class="countdown-label">horas</div>
         </div>
         <div class="countdown-item">
-          <div id="minutescont" class="countdown-number">--</div>
+          <div id="minutes" class="countdown-number">00</div>
           <div class="countdown-label">minutos</div>
         </div>
       </div>
@@ -72,6 +70,38 @@
   </footer>
 
   <script rel="script" href="js/script.js">
+
+     //Contador
+
+    // Definindo a data final da contagem regressiva (formato: ano, mês - 1, dia, hora, minuto, segundo)
+    var endDate = new Date(2024, 6, 20, 0, 0,);
+
+    function updateCountdown() {
+      var now = new Date();
+      var timeDiff = endDate - now;
+
+      if (timeDiff <= 0) {
+        document.getElementById('days').innerText = '00';
+        document.getElementById('hours').innerText = '00';
+        document.getElementById('minutes').innerText = '00';
+      } else {
+        var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+
+        document.getElementById('days').innerText = padZero(days);
+        document.getElementById('hours').innerText = padZero(hours);
+        document.getElementById('minutes').innerText = padZero(minutes);
+      }
+    }
+
+    function padZero(num) {
+      return (num < 10 ? '0' : '') + num;
+    }
+
+    // Atualizando a contagem regressiva a cada segundo
+    setInterval(updateCountdown, 1000);
+
 
      // Função para alternar a visibilidade do menu ao clicar no botão do menu
  document.getElementById('menu-button').addEventListener('click', function() {

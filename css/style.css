@@ -8,10 +8,9 @@ body {
 
 /*cabeçalho*/
 header {
-    padding: 7ch;
+    padding: 18ch;
     text-align: center;
     font-size: 10px;
-    line-height: 1.3;
 }
 
 .letterorange {
@@ -39,6 +38,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
 }
 
 .container {
@@ -148,7 +148,6 @@ h1 {
 
 
 .subtitle {
-    padding-top: 5ch;
     text-align: center;
 }
 
@@ -360,7 +359,7 @@ h1 {
       margin-left: 20px;
       color: #fff;
     }
-  
+
     .desktop-nav .nav-links {
       display: flex;
       align-items: center;
@@ -373,4 +372,4 @@ h1 {
       padding: 5px 10px;
       color: #fff;
       margin-left: 10px;
-    }
+    }}
