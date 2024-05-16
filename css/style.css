@@ -2,7 +2,7 @@ body {
     font-family: Verdana, sans-serif;
     color: black;
     background-color: rgb(245, 246, 248);
-    margin: 4vh;
+    margin: 2vh;
     font-size: 14px;
 }
 
@@ -80,9 +80,6 @@ h1 {
     position: relative;
     transition: 0.5s ease-out;
     background-color: #DD660A;
-    width: 95px;
-    height: 95px;
-    font-size: 1.4em;
 }
 
 .datacontainer div h1 {
@@ -109,6 +106,7 @@ h1 {
     background-color: #EF9A36;
     width: 300px;
     display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -118,6 +116,7 @@ h1 {
     background-color: #EF9A36;
     width: 300px;
     display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -299,40 +298,36 @@ h1 {
   
   /* Estilos para PCs */
   @media (min-width: 768px) {
-   /*main calendar*/
+   main{
+    margin-right: 25em;
+    margin-left: 25em ;
+   }
+    /*main calendar*/
    .calendarcontainer{
-    display: grid;
-    width: 100vh;
+    display: flex;
+    width: 150vh;
    }
    .datacontainer{
-    margin-left: 200px;
-    display: grid;
-    column-gap: 200px;
+    display: flex;
+    justify-content: space-around;
+    width: 130vh;
    }
-   #b20{
-    grid-row: 1;
-    grid-column: 1;
+   .datacontainer div:hover {
+    position: relative;
+    transition: 0.5s ease-out;
+    background-color: #EF9A36;
+}
+   .container720{
+    display: flex;
+    width: 120vh;
+    justify-content: space-between;
+    
    }
-   #d20{
-    grid-row: 2; /* Ocupa a primeira linha */
-    grid-column: 0;
-   }
-   #b21{
-    grid-row: 1;
-    grid-column: 2;
-   }
-   #d21{
-    grid-row: 2; /* Ocupa a primeira linha */
-    grid-column: 2;
-   }
-   #b22{
-    grid-row: 1;
-    grid-column: 3;
+   #d20,#d21,#d22{
+    display: block;
    }
    #d22{
-    grid-row: 2; /* Ocupa a primeira linha */
-    grid-column: 3;
-    margin: 10px;
+    display: flex;
    }
     .mobile-nav {
       display: none; 
@@ -343,8 +338,31 @@ h1 {
     }
 
     header {
-      padding: 18ch;
+      padding: 10px;
+      margin-top: 10ch;
   }
+  .banner {
+   padding: 40px;
+}
+#participante,
+#ouvinte,
+#programacao {
+    background-color: #EF9A36;
+    border-style: none;
+    width: fit-content;
+    font-size: 17px;
+    padding: 3vh;
+    border-radius: 7px;
+    margin-top: 5%;
+}
+article p{
+  font-size: 17px;
+}
+aside{
+  display: flex;
+  justify-content: space-around;
+}
+
   
     nav.desktop-nav { 
       position: fixed;
