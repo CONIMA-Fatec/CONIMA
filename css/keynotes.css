@@ -2,12 +2,45 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    border-radius: 16px;
+
 }
+.slide{
+    margin: 2%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0px 20px 68px -1px rgba(3,3,3,0.65);
+    -moz-box-shadow: 0px 20px 68px -1px rgba(3,3,3,0.65);
+    box-shadow: 0px 20px 68px -1px rgba(3,3,3,0.65);
+    height: 580px;
+    width: 500px;
+
+}
+.slide:hover{
+    /* From https://css.glass */
+background: rgba(221, 102, 10, 0.35);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(221, 102, 10, 0.3);
+color: #ddd;
+
+
+}
+
 .contentcarousel{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
+
+
 }
 p{
     text-align: justify;
@@ -15,12 +48,18 @@ p{
 .containercarousel img{
     width: 200px;
     height: 200px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
 }
  /* Estilos para PCs */
  @media (min-width: 768px) {
     .containercarousel{
         display: grid;
+        column-gap: 1cap;
         grid-template-columns: repeat(3, 1fr);
     }
 
  }
+
+ /*

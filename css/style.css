@@ -1,11 +1,14 @@
-body {
-    font-family: Verdana, sans-serif;
-    color: black;
-    background-color: rgb(245, 246, 248);
-    margin: 2vh;
-    font-size: 14px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+  margin: 0;
 }
-
+body {
+    background: linear-gradient(0deg, rgba(136,8,91,1) 9%, rgba(221,102,10,1) 100%);
+}
+main{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
 /*cabeçalho*/
 header {
     text-align: center;
@@ -22,11 +25,6 @@ article {
     flex-direction: column;
     align-items: center;
 
-}
-
-article h2,
-h1 {
-    font-size: 20px;
 }
 
 .banner {
@@ -48,7 +46,13 @@ h1 {
 
 /*Main Calendar*/
 .calendarcontainer {
-    background-color: antiquewhite;
+   /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     width: 320px;
     display: flex;
     flex-direction: column;
@@ -143,30 +147,52 @@ h1 {
 }
 /*ABOUT*/
 aside{
+  margin-top: 10%;
   display: flex;
   justify-content: space-around;
 }
 aside img{
-  width: 9em;
+  width: 5em;
 }
 
 /*home*/
 
+.subtitle-home{
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 100;
+  font-size: 36px;
+  color: #ddd;
+  margin-top: 6%
+}
 
-.subtitle {
-    text-align: center;
+.subtitle h1{
+  padding-top: 1%;
+  font-size: 5vh;
+  color: #ddd;
+  text-align: center;
 }
 .subtitle img{
   width: 300px;
 }
 
 
+
 /*Contador*/
 
 .contagem-regress {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  background: rgb(136,8,91);
+  background: linear-gradient(100deg, rgba(136,8,91,1) 9%, rgba(221,102,10,1) 100%); 
+  border-radius: 50px;
+  width: 700px;
+  border-top: 3px solid #ddd;
+  border-left: 3px solid #ddd;
+  border-right: 3px solid #ddd;
+  padding-bottom: 2%;
 }
 
 .contagem-regress h3 {
@@ -176,40 +202,67 @@ aside img{
 
 .countdown-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .countdown-item {
-    font-size: 18px;
-    text-align: center;
-    margin: 0 5px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    background-color: #88085B;
-    color: #fff;
-    min-width: 50px;
-    min-height: 50px;
-}
 
-.countdown-item-days {
-    font-size: 18px;
+    font-size: 36px;
     text-align: center;
-    margin: 0 5px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    background-color: #DD660A;
-    color: #fff;
-    min-width: 50px;
-    min-height: 50px;
+    margin-top: 1%;
+    color: #ddd;
 }
 
 .countdown-label {
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 5px;
 }
+/*slide home*/
+.slidehome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 
+  
+}
+.imagens{
+  display: flex;
+  justify-content: space-evenly;
+  background: #ddd;
+  border-radius: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.72);
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 20px 120px 17px rgba(3,3,3,0.53);
+  -moz-box-shadow: 0px 20px 120px 17px rgba(3,3,3,0.53);  
+  box-shadow: 0px 20px 120px 17px rgba(3,3,3,0.53);
+  width: 1000px;
+  height: 412px;
+}
+.slidehome img{
+  align-self: center;
+  width: 300px;
+  height: 300px;
+}
+/*Aside Home*/
+.home{
+  color: #ddd;
+}
+.subtitle-direita h1{
+  text-align: center;
+}
+.subtitle-direita iframe{
+  margin-top: 2%;
+}
+.subtitle-esquerda{
+  text-align: center;
+  padding: 3% 3% 0% 2%;
+}
+.subtitle-esquerda img{
+  margin-top: 20px;
+    width: 600PX;
+    height: 450px;
+}
 /* Estilos para Dispositivos Móveis */
 .mobile-nav {
     position: fixed;
@@ -293,6 +346,49 @@ aside img{
       .menu-list a:hover {
         background-color: #ddd;
       }
+/*Footer para PC*/
+footer{
+  margin: 0;
+  margin-top: 3%;
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+}
+footer h1{
+  color: #ddd;
+  font-size: 16px;
+  text-align: center;
+}
+footer p{
+  color: #ddd;
+}
+.container-footer{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+footer .social-media{
+  display: flex;
+  flex-direction: column;
+  align-items:end;
+  width: 250px;
+}
+footer .social-media img{
+  margin-right: 10px;
+  width: 20px;
+}
+footer .org{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+}
+footer .org img{
+  width: 100px;
+}
+footer .apoio{
+  width: 500px;
+}
       
       /* Estilos para dispositivos menores */
       @media screen and (max-width: 768px) {
@@ -305,6 +401,7 @@ aside img{
         }
       }
   
+
   /* Estilos para PCs */
   @media (min-width: 768px) {
    main{
@@ -381,7 +478,11 @@ aside img{
       top: 0;
       left: 0;
       width: 100%;
-      background-color: #88085B;
+      background: rgba(255, 255, 255, 0);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8.5px);
+      -webkit-backdrop-filter: blur(8.5px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.72);
       display: flex;
       justify-content: space-between;
       padding: 10px;
@@ -390,7 +491,6 @@ aside img{
   
     .desktop-nav .nav-logo { 
       margin-left: 20px;
-      color: #fff;
     }
 
     .desktop-nav .nav-links {
