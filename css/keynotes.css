@@ -22,7 +22,9 @@
 
 }
 .slide:hover{
-    /* From https://css.glass */
+transition-property: color,background-color,border-color;
+transition-duration: 0.3s;
+transition-timing-function: linear;
 background: rgba(221, 102, 10, 0.35);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -43,6 +45,7 @@ color: #ddd;
 
 }
 p{
+    margin-top: 5%;
     text-align: justify;
 }
 .containercarousel img{
@@ -50,6 +53,7 @@ p{
     height: 200px;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 5%;
 
 }
  /* Estilos para PCs */
