@@ -299,6 +299,12 @@ aside img{
     transition-timing-function: linear;
     color: #72074d;
   }
+  .nav-button:focus{
+    transition-property: color,background-color,border-color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    color: #72074d;
+  }
 
   .desktop-nav {
     display: none;
@@ -417,6 +423,14 @@ footer .apoio{
         .nav-button {
           margin-right: 0;
         }
+        .subtitle-home{
+          font-size: 14px;
+        }
+        .slidehome{
+
+          display: flex;
+          flex-wrap: wrap;
+        }
       }
   
 
@@ -431,54 +445,10 @@ footer .apoio{
     display: flex;
     width: 150vh;
    }
-   .datacontainer{
-    display: flex;
-    justify-content: space-around;
-    width: 130vh;
+   table tr td{
+    border: solid 1px black;
    }
-   .datacontainer div:hover {
-    position: relative;
-    transition: 0.5s ease-out;
-    background-color: #EF9A36;
-}
-   .container720{
-    display: flex;
-    width: 120vh;
-    justify-content: space-between;
-    
-   }
-   #d20,#d21,#d22{
-    display: block;
-   }
-   #d22{
-    display: flex;
-   }
-    .mobile-nav {
-      display: none; 
-    }
-  
-    .content {
-      padding-top: 50px; 
-    }
-
-    header {
-      padding: 10px;
-      margin-top: 10ch;
-  }
-  .banner {
-   padding: 40px;
-}
-#participante,
-#ouvinte,
-#programacao {
-    background-color: #EF9A36;
-    border-style: none;
-    width: fit-content;
-    font-size: 17px;
-    padding: 3vh;
-    border-radius: 7px;
-    margin-top: 5%;
-}
+   
 article p{
   font-size: 17px;
 }
