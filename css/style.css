@@ -447,6 +447,12 @@ footer .org img:not(:last-child){
           display: flex;
           flex-wrap: wrap;
         }
+        footer{
+          margin-bottom: 10px;
+        }
+        .social-media{
+          align-self: start;
+        }
         .logoFooter{
           margin: 1%
         }
@@ -511,7 +517,7 @@ footer .org img:not(:last-child){
     
       }
     /*Estilos Mobile*/
-  @media (max-width: 480px){
+  @media (max-width: 490px){
     .subtitle-direita iframe{
       width: 300px;
       height: 250px;
