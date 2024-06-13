@@ -431,7 +431,7 @@ footer .org img:not(:last-child){
 }
       
       /* Estilos para dispositivos menores CELULAR */
-      @media screen and (max-width: 490px) {
+      @media screen and (max-width: 880px) {
         .mobile-nav {
           display: block;
         }
@@ -459,7 +459,7 @@ footer .org img:not(:last-child){
         }
         .articlehome{
           position: relative;
-          width: 400px;
+          display: flex;
         }
         .countdown-number{
           font-size: 20px;
@@ -510,13 +510,7 @@ footer .org img:not(:last-child){
         }
     
       }
-  /*ESTILO UM POUCO MAIOR*/
-  @media screen and (max-width: 834px){
-    .mobile-nav{
-      display: block;
-    }
-  }
-  /*Estilos Mobile*/
+    /*Estilos Mobile*/
   @media (max-width: 480px){
     .subtitle-direita iframe{
       width: 300px;
