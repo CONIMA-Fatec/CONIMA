@@ -2,6 +2,7 @@
 *{
   margin: 0;
 }
+
 body {
     background: linear-gradient(0deg, rgba(136,8,91,1) 9%, rgba(221,102,10,1) 100%);
 }
@@ -22,15 +23,21 @@ header {
 /*Main submission e listener*/
 article {
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
 
 }
+.botaoinscdown{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+.botaoinscdown a:last-child{
+  margin-left: 20px;
+}
 
 .banner {
-    width: 310px;
-    height: 110px;
-    background-color: #88085B;
+   margin-bottom: 20px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -46,7 +53,6 @@ article {
 
 /*Main Calendar*/
 .calendarcontainer {
-   /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -147,7 +153,7 @@ article {
 }
 /*ABOUT*/
 aside{
-  margin-top: 10%;
+  margin-top: 3%;
   display: flex;
   justify-content: space-around;
 }
@@ -180,14 +186,17 @@ aside img{
 
 
 /*Contador*/
-
+.articlehome {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .contagem-regress {
   position: relative;
   top: 20px;
   left: 20px;
   z-index: 1;
-  background: rgb(136,8,91);
-  background: linear-gradient(100deg, rgba(136,8,91,1) 9%, rgba(221,102,10,1) 100%); 
+  background: linear-gradient(100deg, rgba(136,8,91,1) 6%, rgba(221,102,10,1) 100%); 
   border-radius: 50px;
   width: 700px;
   border-top: 3px solid #ddd;
@@ -248,24 +257,30 @@ aside img{
 }
 /*Aside Home*/
 .home{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
   color: #ddd;
-}
-.subtitle-direita h1{
   text-align: center;
 }
+
 .subtitle-direita iframe{
+  border-radius: 15px;
+  width: 500px;
+  height: 450px;
   box-shadow: -2px 15px 33px -10px rgba(0,0,0,0.88);
   -webkit-box-shadow: -2px 15px 33px -10px rgba(0,0,0,0.88);
   -moz-box-shadow: -2px 15px 33px -10px rgba(0,0,0,0.88);
-  margin-top: 2%;
+}
+.subtitle-direita p{
+  text-align: justify;
 }
 .subtitle-esquerda{
-  text-align: center;
-  padding: 3% 3% 0% 2%;
+  align-content: center;
 }
 .subtitle-esquerda img{
-    margin-top: 20px;
-    width: 600PX;
+    margin-top: 50px;
+    width: 500px;
     height: 450px;
     border-radius: 15px;
     box-shadow: -2px 15px 33px -10px rgba(0,0,0,0.88);
@@ -275,6 +290,7 @@ aside img{
 /* Estilos para Dispositivos Móveis */
 .mobile-nav {
     position: fixed;
+    border-top: 1px solid #DD660A;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -372,50 +388,55 @@ aside img{
       }
 /*Footer para PC*/
 footer{
-  margin: 0;
+  border-top: 1px solid rgb(255, 255, 255);
   margin-top: 3%;
   display: flex;
-  align-self: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
-footer h1{
-  color: #ddd;
-  font-size: 16px;
+footer section{
   text-align: center;
 }
-footer p{
+footer h6{
   color: #ddd;
+  font-size: 16px;
 }
 .container-footer{
   display: flex;
   justify-content: space-evenly;
   
 }
+footer .logoFooter{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  align-content: center;
+}
 footer .social-media{
+  padding-top: 1%;
+  align-content:center;
+}
+footer .social-media div:last-child{
   display: flex;
-  flex-direction: column;
-  align-items:end;
-  width: 250px;
+  align-self: center;
+  flex-direction:row;
 }
 footer .social-media img{
-  margin-right: 10px;
+  margin: 10px;
   width: 20px;
 }
 footer .org{
+  padding-top: 1%;
+  align-content:center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 300px;
 }
-footer .org img{
+footer .org img:not(:last-child){
   width: 100px;
-}
-footer .apoio{
-  width: 500px;
 }
       
       /* Estilos para dispositivos menores */
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 480px) {
         .mobile-nav {
           display: block;
         }
@@ -431,15 +452,71 @@ footer .apoio{
           display: flex;
           flex-wrap: wrap;
         }
-      }
-  
+        .logoFooter{
+          margin: 1%
+        }
+        .logoFooter img{
+          width: 150px;
+        }
+        .contagem-regress{
+          width: 300px;
+          margin-bottom: 2%;
+        }
+        .articlehome{
+          position: relative;
+          width: 400px;
+        }
+        .countdown-number{
+          font-size: 20px;
+        }
+        .imagens{
+          display: flex;
+          flex-wrap: wrap;
+          width: 350px;
+          height: max-content;
+          -webkit-box-shadow: 12px -138px 300px 18px rgba(0,0,0,0.39);
+          -moz-box-shadow: 12px -138px 300px 18px rgba(0,0,0,0.39);   
+          box-shadow: 12px -138px 300px 18px rgba(0,0,0,0.39);
+        }
+        .imagens img {
+          width: 150px;
+          height: auto;
+        }
+        .imagens img:last-child{
+          display: none;
+        }
+        .subtitle-esquerda, .subtitle-direita{
+          margin-top: 40px;
+        }
+        .subtitle-esquerda img{
+          margin-bottom: 10px;
+        }
+        .org{
+          margin-bottom: 80px;
+        }
 
+        /*Participantes*/
+       .slide{
+        position: relative;
+        padding-bottom: 10%;
+        z-index: -1;
+        }
+    
+      }
+  /*Estilos Mobile*/
+  @media (max-width: 480px){
+    .subtitle-direita iframe{
+      width: 300px;
+      height: 250px;
+    }
+    .subtitle-esquerda img{
+      width: 300px;
+      height: 250px;
+    
+      }
+    }
   /* Estilos para PCs */
   @media (min-width: 768px) {
-   main{
-    margin-right: 25em;
-    margin-left: 25em ;
-   }
     /*main calendar*/
    .calendarcontainer{
     display: flex;
@@ -462,9 +539,7 @@ aside img{
 
   
     nav.desktop-nav { 
-      position: fixed;
-      top: 0;
-      left: 0;
+      position: static;
       width: 100%;
       background: rgba(255, 255, 255, 0);
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -474,7 +549,7 @@ aside img{
       display: flex;
       justify-content: space-between;
       padding: 10px;
-      z-index: 1; 
+      z-index: 999; 
     }
   
     .desktop-nav .nav-logo { 

@@ -1,12 +1,12 @@
 .containercarousel{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     border-radius: 16px;
 
 }
 .slide{
-    margin: 2%;
+    margin-top: 25px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
