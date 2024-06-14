@@ -55,6 +55,9 @@ p{
     margin: 5%;
 
 }
+
+
+
  /* Estilos para Celular */
  @media (max-width: 768px) {
     .slide{
