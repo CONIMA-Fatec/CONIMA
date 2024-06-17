@@ -9,32 +9,32 @@
   <title>Página Inicial</title>
 </head>
 <body onload="updateCountdown()">
-    <nav class="mobile-nav">
+    <nav class="mobile-nav" aria-label="Menu principal para dispositivos móveis">
       <div class="nav-buttons">
-        <a href="submission.html" class="nav-button"><img src="assets/icon/subm.png" alt="Submissão de Artigos"></a>
-        <a href="index.html" class="nav-button"><img src="assets/icon/icon-conin.png" alt=""></a>
-        <a href="#" class="nav-button" id="menu-button"><img src="assets/icon/menu.png" alt="Menu"></a>
+        <a href="submission.html" class="nav-button" aria-label="Acesse a página de Submissão de Artigos"><img src="assets/icon/subm.png" alt="Submissão de Artigos"></a>
+        <a href="index.html" class="nav-button"  aria-label="Retorne à Página Inicial"><img src="assets/icon/icon-conin.png" alt="Coninma"></a>
+        <a href="#" class="nav-button" id="menu-button" aria-label="Abrir Menu"><img src="assets/icon/menu.png" alt="Menu"></a>
       </div>
-        <div class="menu-list" id="menu-list">
-          <a href="cronogram.html">Calendário</a>
-          <a href="keynotes.html">Participantes</a>
-          <a href="submission.html">Submissão de Artigos</a>
-          <a href="listener.html">Inscrição Ouvinte</a>
-          <a href="hackatec.html">Inscrição HackaTec</a> 
-          <a href="about.html">Sobre</a>  
-          <a id="close-button">Fechar</a>    
+        <div class="menu-list" id="menu-list" aria-label="Menu de navegação">
+          <a href="cronogram.html" aria-label="Acesse a página do Calendário">Calendário</a>
+          <a href="keynotes.html" aria-label="Acesse a página de Participantes">Participantes</a>
+          <a href="submission.html" aria-label="Acesse a página de Submissão de Artigos">Submissão de Artigos</a>
+          <a href="listener.html" aria-label="Acesse a página de Inscrição Ouvinte">Inscrição Ouvinte</a>
+          <a href="hackatec.html"  aria-label="Acesse a página de Inscrição HackaTec">Inscrição HackaTec</a> 
+          <a href="about.html"  aria-label="Acesse a página Sobre">Sobre</a>  
+          <a id="close-button"  aria-label="Fechar Menu" >Fechar</a>    
       </div>
     </nav>
-  <nav class="desktop-nav">
-    <a href="index.html" class="nav-logo"> <span><img src="assets/Logo/CONINMA 1.png" alt=""></span></a>
+  <nav class="desktop-nav" aria-label="Menu principal para desktop">
+    <a href="index.html" class="nav-logo" aria-label="Acesse a Página Inicial da Conferência Coninma"> <span><img src="assets/Logo/CONINMA 1.png" alt=""></span></a>
     <div class="nav-links">
       
-      <a href="cronogram.html" class="nav-button">Calendário</a>
-      <a href="keynotes.html" class="nav-button">Participantes</a>
-      <a href="submission.html" class="nav-button">Submissão de Artigos</a>
-      <a href="listener.html" class="nav-button">Inscrição Ouvinte</a>
-      <a href="hackatec.html" class="nav-button">Inscrição HackaTec</a>
-      <a href="about.html" class="nav-button">Sobre</a>
+      <a href="cronogram.html" class="nav-button" aria-label="Acesse a página do Calendário">Calendário</a>
+      <a href="keynotes.html" class="nav-button" aria-label="Acesse a página de Participantes">Participantes</a>
+      <a href="submission.html" class="nav-button" aria-label="Acesse a página de Submissão de Artigos">Submissão de Artigos</a>
+      <a href="listener.html" class="nav-button" aria-label="Acesse a página de Inscrição Ouvinte">Inscrição Ouvinte</a>
+      <a href="hackatec.html" class="nav-button" aria-label="Acesse a página de Inscrição HackaTec">Inscrição HackaTec</a>
+      <a href="about.html" class="nav-button" aria-label="Acesse a página Sobre">Sobre</a>
     </div>
   </nav>
   <header>
@@ -45,7 +45,7 @@
         <h1>O poder da Inteligência Artificial <br> Transforme o seu futuro</h1>
       </div>
       <section class="slidehome">
-        <section class="contagem-regress" >
+        <section class="contagem-regress" aria-label="Contagem regressiva para o evento Coninma" >
           <div class="countdown-container">
             <div class="countdown-item">
               <div id="days" class="countdown-number">00</div>
@@ -60,10 +60,10 @@
               <div class="countdown-label">minutos</div>
             </div>
         </section>
-        <div class="imagens">
-          <img src="assets/keynotes/FernandoPaes.JPG" alt="">
-          <img src="assets/keynotes/Geicielle2.jpg" alt="">
-          <img src="assets/keynotes/MARCEL-2.jpg" alt="">
+        <div class="imagens" aria-label="Imagens de alguns dos participantes do Coninma">
+          <img src="assets/keynotes/FernandoPaes.JPG" alt="Fernando Paes, um dos participantes do Coninma">
+          <img src="assets/keynotes/Geicielle2.jpg" alt="Geicielle, uma das participantes do Coninma">
+          <img src="assets/keynotes/MARCEL-2.jpg" alt="Marcel, um dos participantes do Coninma">
         </div>
       </section>
     </article>
@@ -76,35 +76,36 @@
             <p>Avenida Castro Alves, 62- Somenzari, Marília - SP</p>
           </div>
           <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.8456779366043!2d-49.95655822396893!3d-22.207970313271844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bfd7217b8e873b%3A0xd7de49af9e293d42!2sFatec%20Mar%C3%ADlia%20-%20Faculdade%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1717740971548!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.8456779366043!2d-49.95655822396893!3d-22.207970313271844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bfd7217b8e873b%3A0xd7de49af9e293d42!2sFatec%20Mar%C3%ADlia%20-%20Faculdade%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1717740971548!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  aria-label="Localização da FATEC Marília onde acontecerá o evento Coninma"
+            ></iframe>
           </div>
         </div>
       <div class="subtitle-esquerda">
         <h2>Faculdade de <br> Tecnologia de Marília</h2>
-        <img src="assets/images/fatec-marilia.jpg" alt="">
+        <img src="assets/images/fatec-marilia.jpg" alt="Imagem da FATEC Marília">
       </div>
       
     </aside>
   </main>
-  <footer>
+  <footer role="contentinfo" aria-label="Informações de contato e organização da Conferência Coninma">
     <section class="logoFooter">
-      <img src="assets/footer/coninma-white.png" alt="">
+      <img src="assets/footer/coninma-white.png" alt="Conferência Coninma">
       <h6>Conferência de Softwares Inteligentes e Aplicações de Aprendizado de Máquina</h6>
     </section>
-    <section class="social-media">
+    <section class="social-media" aria-label="Redes sociais da Conferência Coninma">
       <h6>Redes Sociais</h6>
       <div>
-        <img src="assets/social/instagram-white.png" alt="">
-        <img src="assets/social/linkedin-white.png" alt="">
-        <img src="assets/social/youtube-white.png" alt="">
+        <img src="assets/social/instagram-white.png" aria-label="Acesse a página da Conferência Coninma no Instagram" alt="Instagram">
+        <img src="assets/social/linkedin-white.png"  aria-label="Acesse a página da Conferência Coninma no LinkedIn" alt="LinkedIn">
+        <img src="assets/social/youtube-white.png"  aria-label="Acesse o canal da Conferência Coninma no YouTube" alt="YouTube">
       </div>
     </section>
-    <section class="org">
+    <section class="org" aria-label="Organização da Conferência Coninma">
       <h6>Organização</h6>
       <div>
-        <img src="assets/org/cps_white.png" alt="">
-        <img src="assets/org/dsm_white.png" alt="">
-        <img src="assets/org/fatec_white.png" alt="">
+        <img src="assets/org/cps_white.png" alt="CPS - Centro Paula Souza">
+        <img src="assets/org/dsm_white.png" alt="DSM - Desenvolvimento de Software Multiplataforma">
+        <img src="assets/org/fatec_white.png" alt="FATEC Marília">
       </div>
     </section>
   </footer>
