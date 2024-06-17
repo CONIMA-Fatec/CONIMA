@@ -5,7 +5,14 @@
 }
 
 body {
+<<<<<<< HEAD
   background: linear-gradient(0deg, rgba(136, 8, 91, 1) 9%, rgba(221, 102, 10, 1) 100%);
+=======
+    background: #FFFFFF;
+    background-image: url(/assets/fundo.png);
+    background-repeat: no-repeat;
+    background-position: 30px;
+>>>>>>> b7b7452 (trabalhando fundo)
 }
 
 main {
@@ -14,9 +21,15 @@ main {
 }
 
 /*cabeçalho*/
+<<<<<<< HEAD
 header {
   text-align: center;
   font-size: 10px;
+=======
+body header {
+    text-align: center;
+    font-size: 10px;
+>>>>>>> b7b7452 (trabalhando fundo)
 }
 
 .letterorange {
@@ -25,9 +38,15 @@ header {
 
 /*Main submission e listener*/
 article {
+<<<<<<< HEAD
   display: flex;
 
   align-items: center;
+=======
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> b7b7452 (trabalhando fundo)
 
 }
 
@@ -58,6 +77,7 @@ article {
 
 /*Main Calendar*/
 .calendarcontainer {
+<<<<<<< HEAD
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -69,7 +89,19 @@ article {
   flex-direction: column;
   align-items: center;
   padding-bottom: 5%;
+=======
+    border-radius: 16px;
+    border: 1px solid linear-gradient(0deg, rgba(136,8,91,1) 9%, rgba(221,102,10,1) 100%);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+>>>>>>> b7b7452 (trabalhando fundo)
 
+}
+.calendarcontainer h1{
+  font-size: 20px;
 }
 
 .datacontainer {
@@ -83,12 +115,19 @@ article {
 }
 
 .datacontainer div {
+<<<<<<< HEAD
   position: relative;
   text-align: center;
   line-height: 0;
   background-color: #EF9A36;
   width: 64px;
   height: 64px;
+=======
+    position: relative;
+    text-align: center;
+    line-height: 0;
+    background-color: #EF9A36
+>>>>>>> b7b7452 (trabalhando fundo)
 }
 
 .datacontainer div:hover {
@@ -97,6 +136,7 @@ article {
   background-color: #DD660A;
 }
 
+<<<<<<< HEAD
 .datacontainer div h1 {
   font-size: 1.2em;
   color: white;
@@ -115,6 +155,23 @@ article {
   flex-direction: column;
   align-items: center;
   text-align: center;
+=======
+
+#d20 {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+>>>>>>> b7b7452 (trabalhando fundo)
+}
+#d20 div{
+  
+ 
+  background-color: #EF9A36;
+  width: 350px;
+  height: 230px;
 }
 
 #d21 {
@@ -401,7 +458,12 @@ aside img {
 
 
 /*Footer para PC*/
+<<<<<<< HEAD
 footer {
+=======
+footer{
+  background-color: #72074d;
+>>>>>>> b7b7452 (trabalhando fundo)
   border-top: 1px solid rgb(255, 255, 255);
   margin-top: 3%;
   display: flex;
@@ -458,8 +520,109 @@ footer .org img:not(:last-child) {
   width: 100px;
 }
 
+<<<<<<< HEAD
 .sub {
   margin: 40px;
+=======
+          display: flex;
+          flex-wrap: wrap;
+        }
+        footer{
+          margin-bottom: 10px;
+        }
+        .social-media{
+          align-self: start;
+        }
+        .logoFooter{
+          margin: 1%
+        }
+        .logoFooter img{
+          width: 150px;
+        }
+        .contagem-regress{
+          width: 300px;
+          margin-bottom: 2%;
+        }
+        .articlehome{
+          position: relative;
+          display: flex;
+        }
+        .countdown-number{
+          font-size: 20px;
+        }
+        .imagens{
+          display: flex;
+          flex-wrap: wrap;
+          width: 350px;
+          height: max-content;
+          -webkit-box-shadow: 12px -138px 300px 18px rgba(0,0,0,0.39);
+          -moz-box-shadow: 12px -138px 300px 18px rgba(0,0,0,0.39);   
+          box-shadow: 12px -138px 300px 18px rgba(0,0,0,0.39);
+        }
+        .imagens img {
+          width: 150px;
+          height: auto;
+        }
+        .imagens img:last-child{
+          display: none;
+        }
+        .subtitle-esquerda, .subtitle-direita{
+          margin-top: 40px;
+        }
+        .subtitle-esquerda img{
+          margin-bottom: 10px;
+        }
+        .org{
+          margin-bottom: 80px;
+        }
+
+        /*Participantes*/
+       .slide{
+        position: relative;
+        padding-bottom: 10%;
+        z-index: -1;
+        }
+        .menu-list a:hover {
+          transition-property: color,background-color,border-color;
+          transition-duration: .2s;
+          transition-timing-function: linear;
+          color: #DD660A;
+        }
+        .menu-list a:focus {
+          transition-property: color,background-color,border-color;
+          transition-duration: .2s;
+          transition-timing-function: linear;
+          color: #DD660A;
+        }
+    
+      }
+    /*Estilos Mobile*/
+  @media (max-width: 490px){
+    .subtitle-direita iframe{
+      width: 300px;
+      height: 250px;
+    }
+    .subtitle-esquerda img{
+      width: 300px;
+      height: 250px;
+    
+      }
+    }
+  /* Estilos para PCs */
+  @media (min-width: 768px) {
+    /*main calendar*/
+   .calendarcontainer{
+    display: flex;
+    width: 150vh;
+   }
+   table tr td{
+    border: solid 1px black;
+    border-collapse:collapse;
+   }
+   
+article p{
+  font-size: 17px;
+>>>>>>> b7b7452 (trabalhando fundo)
 }
 
 .articlesub {
@@ -528,6 +691,7 @@ padding-top: 20px;
 	padding:15px 38px;
 	text-decoration:none;
   
+<<<<<<< HEAD
 }
 .botaoins:hover {
 	background:linear-gradient(to bottom, #d9742b 5%, #dd660a 100%);
@@ -537,6 +701,25 @@ padding-top: 20px;
 	position:relative;
 	top:1px;
 }
+=======
+    nav.desktop-nav { 
+      position: static;
+      width: 100%;
+      background: #DD660A;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8.5px);
+      -webkit-backdrop-filter: blur(8.5px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.72);
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      z-index: 999; 
+    }
+  
+    .desktop-nav .nav-logo { 
+      margin-left: 20px;
+    }
+>>>>>>> b7b7452 (trabalhando fundo)
 
 
 
