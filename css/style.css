@@ -3,9 +3,11 @@
 * {
   margin: 0;
 }
-
 body {
-  background: linear-gradient(0deg, rgba(136, 8, 91, 1) 9%, rgba(221, 102, 10, 1) 100%);
+  background: #fff;
+  background-image: url(/assets/Background.png);
+  background-repeat: no-repeat;
+ 
 }
 
 main {
@@ -41,13 +43,8 @@ article {
   margin-left: 20px;
 }
 
-.banner {
-  margin-bottom: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
+.banner li{
+  font-size: large;
 }
 
 .container {
@@ -407,6 +404,7 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  background-color: #72074d;
 }
 
 footer section {
@@ -458,13 +456,13 @@ footer .org img:not(:last-child) {
   width: 100px;
 }
 
-.sub {
-  margin: 40px;
-}
+
 
 .articlesub {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  margin-top: 10%;
 }
 .articlesub h2 {
   color: #000000;
@@ -473,35 +471,55 @@ footer .org img:not(:last-child) {
 
 .articlesub li {
   color: #000000;
-  font-size: 15px;
+  font-size: 20px;
 }
 
+.aboutsub{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .aboutsub h1{
-  font-size: 35px;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #88085b;
   text-align: center;
-  padding-bottom: 25px;
+  margin-bottom: 20%;
 }
 .aboutsub p{
-  font-size: 25px;
+  font-size: 22px;
+  line-height: 2;
   width: 570px;
 }
-
-.bottons {
-padding-top: 20px;
+.containersub{
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
+ 
+}
+.containersub h2{
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #88085b;
+  text-align: center;
+  margin-bottom: 8%;
+}
+.bottons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10%;
 }
 
 .botaodow {
-	box-shadow: 1px 1px 0px 0px #000000;
 	background:linear-gradient(to bottom, #88085b 5%, #920b63 100%);
 	background-color:#88085b;
 	border-radius:10px;
-	border:1px solid #000000;
+  border: none;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:20px;
 	padding:15px 38px;
 	text-decoration:none;
 }
@@ -515,16 +533,14 @@ padding-top: 20px;
 }
 
 .botaoins {
-	box-shadow: 1px 1px 0px 0px #000000;
 	background:linear-gradient(to bottom, #dd660a 5%, #d9742b 100%);
 	background-color:#dd660a;
 	border-radius:10px;
-	border:1px solid #000000;
+	border: none;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:20px;
 	padding:15px 38px;
 	text-decoration:none;
   
@@ -544,6 +560,10 @@ padding-top: 20px;
 
 /* Estilos para dispositivos menores CELULAR */
 @media screen and (max-width: 880px) {
+  body{
+    background-size: 800px;
+    background-repeat: repeat-y;
+  }
   .mobile-nav {
     display: block;
   }
@@ -644,6 +664,20 @@ padding-top: 20px;
     transition-timing-function: linear;
     color: #DD660A;
   }
+  /*Submissão de Artigos*/
+  .aboutsub p{
+    width: 350px;
+
+  }
+  .aboutsub h1{
+    margin-top: 5%;
+  }
+  .bottons{
+    font-size: 15px;
+    margin: 2%;
+    width: 450px;
+  }
+
 
 }
 
@@ -668,7 +702,11 @@ padding-top: 20px;
     font-size: large;
   }
   .aboutsub h1{
-    font-size: 35px;
+    font-size: 1.7em;
+  }
+  .containersub h2{
+    margin-top: 5%;
+    font-size: 1.5em;
   }
 
 }
@@ -712,6 +750,8 @@ padding-top: 20px;
     justify-content: space-between;
     padding: 10px;
     z-index: 999;
+    font-weight: 600;
+    background-color: #DD660A;
   }
 
   .desktop-nav .nav-logo {
@@ -730,6 +770,11 @@ padding-top: 20px;
     padding: 5px 10px;
     color: #fff;
     margin-left: 10px;
+  }
+
+  /*Submissão PC Estilo*/
+  .botaoins, .botaodow{
+    font-size: 20px;
   }
 
 
