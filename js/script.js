@@ -48,22 +48,3 @@ else {
   conteudo21.style.display = "block";
   conteudo22.style.display = "block";
 }
-/*
-
-/*Carrossel Passador*/
-    var slide = document.querySelectorAll('.slide-container');
-    var carousel = 0;
-    
-    function next(){
-        slide[carousel].classList.remove('active');
-        carousel = (carousel + 1) % slide.length;
-        slide[carousel].classList.add('active');
-    }
-    
-    function prev(){
-        slide[carousel].classList.remove('active');
-        carousel = (carousel - 1 + slide.length) % slide.length;
-        slide[carousel].classList.add('active');
-    }
-
-    

@@ -4,7 +4,7 @@
   margin: 0;
 }
 body {
-  background: #fff;
+  background: #fafafa;
   background-image: url(../assets/Background.png);
   background-repeat: no-repeat;
  
@@ -155,15 +155,33 @@ article {
 }
 
 /*ABOUT*/
-aside {
-  margin-top: 3%;
+.color{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  background: linear-gradient(0deg, rgba(136, 8, 91, 1) 9%, rgba(221, 102, 10, 1) 100%);
+  color: #fff;
+  border-radius: 28px;
+  padding-bottom: 2%;
+  
+}
+.color h3{
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 2%;
+  padding-top: 5%;
+}
+.color hr{
+  border: solid 1px #fff;
+}
+.patrocinadores, .apoio, .instituicoes{
+  text-align: center;
+}
+.color img{
+  width: 150px;
+  margin: 2%;
+  height: auto;
 }
 
-aside img {
-  width: 5em;
-}
 
 /*home*/
 
@@ -172,14 +190,14 @@ aside img {
   font-family: "Inter";
   font-weight: 100;
   font-size: 36px;
-  color: #ddd;
+  color: #fff;
   margin-top: 6%
 }
 
 .subtitle h1 {
   padding-top: 1%;
   font-size: 5vh;
-  color: #ddd;
+  color: #fff;
   text-align: center;
 }
 
@@ -205,9 +223,9 @@ aside img {
   background: linear-gradient(100deg, rgba(136, 8, 91, 1) 6%, rgba(221, 102, 10, 1) 100%);
   border-radius: 50px;
   width: 700px;
-  border-top: 3px solid #ddd;
-  border-left: 3px solid #ddd;
-  border-right: 3px solid #ddd;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
   padding-bottom: 2%;
 }
 
@@ -226,7 +244,7 @@ aside img {
   font-size: 36px;
   text-align: center;
   margin-top: 1%;
-  color: #ddd;
+  color: #fff;
 }
 
 .countdown-label {
@@ -248,7 +266,7 @@ aside img {
 .imagens {
   display: flex;
   justify-content: space-evenly;
-  background: #ddd;
+  background: #fafafa;
   border-radius: 16px;
   border: 3px solid rgba(255, 255, 255, 0.72);
   border-radius: 15px;
@@ -268,10 +286,11 @@ aside img {
 
 /*Aside Home*/
 .home {
+  margin-top: 2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  color: #ddd;
+  color: #fff;
   text-align: center;
 }
 
@@ -329,14 +348,14 @@ aside img {
   transition-property: color, background-color, border-color;
   transition-duration: .2s;
   transition-timing-function: linear;
-  color: #72074d;
+  color:#88085b;
 }
 
 .nav-button:focus {
   transition-property: color, background-color, border-color;
   transition-duration: .2s;
   transition-timing-function: linear;
-  color: #72074d;
+  color: #88085b;
 }
 
 .desktop-nav {
@@ -412,7 +431,7 @@ footer section {
 }
 
 footer h6 {
-  color: #ddd;
+  color: #fff;
   font-size: 16px;
 }
 
@@ -481,7 +500,7 @@ footer .org img:not(:last-child) {
 }
 .aboutsub h1{
   font-size: 2.5em;
-  font-weight: 400;
+  font-weight: 700;
   color: #88085b;
   text-align: center;
   margin-bottom: 20%;
@@ -676,6 +695,10 @@ footer .org img:not(:last-child) {
     font-size: 15px;
     margin: 2%;
     width: 450px;
+  }
+  /*Sobre*/
+  .color{
+    margin-top: 5%;
   }
 
 
