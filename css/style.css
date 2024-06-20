@@ -683,7 +683,6 @@ footer .org img:not(:last-child) {
   /*Submissão de Artigos*/
   .aboutsub p{
     width: 350px;
-
   }
   .aboutsub h1{
     margin-top: 5%;
@@ -691,11 +690,26 @@ footer .org img:not(:last-child) {
   .bottons{
     font-size: 15px;
     margin: 2%;
+    margin-top: 5%;
     width: 450px;
   }
+  
+  .containersub ul li{
+  font-size: 14px;
+  width: 350px;
+  }
+
   /*Sobre*/
   .color{
     margin-top: 5%;
+    
+  }
+  .color h3{
+    font-size: 22px;
+  }
+
+  .color img{
+    width: 100px;
   }
 
 
@@ -720,14 +734,15 @@ footer .org img:not(:last-child) {
   
   }
   .articlesub p{
-    font-size: large;
+    font-size: 14px;
   }
   .aboutsub h1{
-    font-size: 1.7em;
+    margin-top: 5%;
+    font-size: 28px;
   }
   .containersub h2{
     margin-top: 5%;
-    font-size: 1.5em;
+    font-size: 20px;
   }
 
 }
