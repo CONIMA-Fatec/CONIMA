@@ -706,6 +706,7 @@ footer .org img:not(:last-child) {
   .subtitle-direita iframe {
     width: 300px;
     height: 250px;
+    margin-top: 5%;
   }
 
   .subtitle-esquerda img {
