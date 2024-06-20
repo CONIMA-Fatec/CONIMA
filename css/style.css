@@ -26,10 +26,13 @@ header {
 }
 
 /*Main submission e listener*/
-article {
+article{
   display: flex;
-
   align-items: center;
+}
+article .articlegeneral  {
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -640,7 +643,7 @@ footer .org img:not(:last-child) {
 
   .imagens img {
     width: 150px;
-    height: auto;
+    height: 150px;
   }
 
   .imagens img:last-child {
