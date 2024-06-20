@@ -720,7 +720,10 @@ footer .org img:not(:last-child) {
   font-size: 14px;
   width: 350px;
   }
-
+  /*HackaTec*/
+  .hackapa{
+    width: 350px;
+  }
   /*Sobre*/
   .color{
     margin-top: 5%;
