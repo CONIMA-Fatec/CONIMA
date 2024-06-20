@@ -24,17 +24,72 @@ header {
 .letterorange {
   color: #DD660A;
 }
+/*Calendario*/
 
+.calendar{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+.cabecalhocalendar{
+  display: flex;
+  text-align: center;
+  align-self: center;
+  
+}
+.dia{
+  width: max-content;
+  border-top: #88085B solid ;
+  border-bottom: #88085B solid ;
+  border-right: #88085B solid ;
+}
+.dia:hover{
+  background-color: #EF9A36;
+}
+.corpocalendar{
+  display: flex;
+  color: #fafafa;
+  
+
+} 
+.corpocalendar div{
+  border-radius: 16px;
+  width: 250px;
+  height: 150px;
+  align-content: center;
+  text-align: center;
+}
+.corpocalendar .orange{
+  margin: 4%;
+  background-color: #ae3237;
+  border:#88085B solid 0.4px;
+  
+}
+.corpocalendar .purple{
+  
+  background-color: #88085B;
+  border: #DD660A solid 0.4px;
+ 
+
+} 
+.corpocalendar .lunch{
+  
+  background-color: #dd660a;
+  color: #fafafa;
+  border: #000000 solid 0.4px;
+}
+#d20, #d21, #d22{
+ margin-left: 20px;
+}
 /*Main submission e listener*/
+
 article{
   display: flex;
   align-items: center;
 }
-article .articlegeneral  {
-  display: flex;
-  justify-content: center;
 
-}
 
 .botaoinscdown {
   display: flex;
@@ -56,105 +111,12 @@ article .articlegeneral  {
   align-items: center;
 }
 
-/*Main Calendar*/
-.calendarcontainer {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 320px;
+/*Hackatec*/
+.hackatec{
+  width: 440px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5%;
-
-}
-
-.datacontainer {
-  display: flex;
-  justify-content: space-evenly;
-  width: 312px;
-  height: 110px;
-  align-items: center;
-
-
-}
-
-.datacontainer div {
-  position: relative;
-  text-align: center;
-  line-height: 0;
-  background-color: #EF9A36;
-  width: 64px;
-  height: 64px;
-}
-
-.datacontainer div:hover {
-  position: relative;
-  transition: 0.5s ease-out;
-  background-color: #DD660A;
-}
-
-.datacontainer div h1 {
-  font-size: 1.2em;
-  color: white;
-}
-
-.datacontainer div h2 {
-  font-size: 1em;
-  font-weight: 400;
-
-}
-
-#d20 {
-  background-color: #EF9A36;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#d21 {
-  background-color: #EF9A36;
-  width: 300px;
-  display: flex;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#d22 {
-  background-color: #EF9A36;
-  width: 300px;
-  display: flex;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#d20 .dark,
-#d21 .dark,
-#d22 .dark {
-  width: 300px;
-  background-color: #DD660A;
-  border-bottom: solid 1px black;
-  border-top: solid 1px black;
-}
-
-/*Botões*/
-#participante,
-#ouvinte,
-#programacao {
-  background-color: #EF9A36;
-  border-style: none;
-  width: fit-content;
-  padding: 1.3vh;
-  border-radius: 7px;
 }
 
 /*ABOUT*/
@@ -663,6 +625,63 @@ footer .org img:not(:last-child) {
     margin-bottom: 80px;
   }
 
+  /*Calendário*/
+  .calendar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .cabecalhocalendar{
+    display: flex;
+    text-align: center;
+  }
+  .dia{
+    width: max-content;
+    border-top: #88085B solid ;
+    border-bottom: #88085B solid ;
+    border-right: #88085B solid ;
+    padding: 10%;
+   
+  }
+  .dia:hover{
+    background-color: #EF9A36;
+  }
+  .corpocalendar{
+    display: flex;
+    color: #fafafa;
+    
+
+  } 
+  .corpocalendar div{
+    border-radius: 16px;
+    padding: 15px;
+    width: 300px;
+  }
+  .corpocalendar .orange{
+    margin-top: 4%;
+    background-color: #ae3237;
+    border:#88085B solid 0.4px;
+   
+    
+  }
+  .corpocalendar .purple{
+    margin-top: 4%;
+    background-color: #88085B;
+    border: #DD660A solid 0.4px;
+   
+  
+  } 
+  .corpocalendar .lunch{
+    margin-top: 4%;
+    background-color: #dd660a;
+    color: #fafafa;
+    border: #000000 solid 0.4px;
+  }
+  #d21,#d22
+  {
+    display: none;
+  }
+ 
   /*Participantes*/
   .slide {
     position: relative;
@@ -753,15 +772,6 @@ footer .org img:not(:last-child) {
 /* Estilos para PCs */
 @media (min-width: 768px) {
 
-  /*main calendar*/
-  .calendarcontainer {
-    display: flex;
-    width: 150vh;
-  }
-
-  table tr td {
-    border: solid 1px black;
-  }
 
   article p {
     font-size: 17px;
@@ -816,5 +826,9 @@ footer .org img:not(:last-child) {
     font-size: 20px;
   }
 
-
+  /*Calendario*/
+  .dia {
+    width: 300px; /* Adjust width for smaller screens */
+  }
 }
+
