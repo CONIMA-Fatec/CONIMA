@@ -636,9 +636,6 @@ footer .org img:not(:last-child) {
     flex-wrap: wrap;
     width: 350px;
     height: max-content;
-    -webkit-box-shadow: 12px -138px 300px 18px rgba(0, 0, 0, 0.39);
-    -moz-box-shadow: 12px -138px 300px 18px rgba(0, 0, 0, 0.39);
-    box-shadow: 12px -138px 300px 18px rgba(0, 0, 0, 0.39);
   }
 
   .imagens img {
