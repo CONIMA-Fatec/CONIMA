@@ -4,7 +4,7 @@
 <hr>
 <h1><a href="https://conima-fatec.github.io/CONIMA/">Veja o Site!</a></h1>
 <h1>
-<img src="./assets/images/laptopcelular.png">
+<img src="./assets/images/laptop.png">
 </h1>
 <hr>
 
