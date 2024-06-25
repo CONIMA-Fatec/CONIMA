@@ -71,6 +71,7 @@ A pesquisa com usuários teve como objetivo coletar informações sobre as carac
 ## Arquitetura da informação
 >SiteMap:
 <img src="./assets/images/SiteMap.png">
+
 >Fluxogramas:
 <img src="./assets/images/Fluxograma Calendário.png">
 <img src="./assets/images/Fluxograma Submissão de Artigos.png">
