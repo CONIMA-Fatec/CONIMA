@@ -62,9 +62,11 @@ A pesquisa com usuários teve como objetivo coletar informações sobre as carac
 
 >Persona:
 
-<img src="./assets/images/persona.png" width="100px">
-<img src="./assets/images/persona1.png" width="100px">
-<img src="./assets/images/persona3.png" width="100px">
+<div style="display: flex;">
+  <img src="./assets/images/persona.png" width="150px" margin="10px">
+  <img src="./assets/images/persona1.png" width="150px" margin="10px">
+  <img src="./assets/images/persona3.png" width="150px" margin="10px">
+</div>
 
 ## Arquitetura da informação
 >SiteMap:
