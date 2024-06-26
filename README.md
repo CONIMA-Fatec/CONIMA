@@ -80,7 +80,11 @@ A pesquisa com usuários teve como objetivo coletar informações sobre as carac
 
 ## Design da interface
 
->Mostre o design da interface do projeto, utilizando mockups ou protótipos.
+>Protótipo Desktop:
+<img src="./assets/images/protótipo desktop.png">
+
+>Protótipo Mobile:
+<img src="./assets/images/Protótipo mobile.png">
 
 ## Documentação
 
