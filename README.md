@@ -142,18 +142,22 @@ A combinação de Arial e Inter pode ser interessante para projetos que exigem c
 
 ## Considerações finais
 
-Compartilhe o que foi aprendido durante o processo e o desenvolvimento pessoal da equipe.
+Para concluir, o desenvolvimento desse projeto foi desafiador para todos os envolvidos e a importancia da colaboração e do feedback se mostrou essencial, com isso convidamos a comunidade a contribuir com sugestões e melhorias através do GitHub.
 
+Agradecemos a todos os envolvidos pela oportunidade!
 
-##  Instalando <nome_do_projeto>
+##  Acessando o CONINMA
 
-... (Instruções de instalação)
-
+O site está hospedado no conima-fatec.github.io/CONIMA e é um site responsivo, logo você precisa de um navegador e acesso a internet para acessá-lo.
 
 ##  Colaboradores
 
-... (Lista de colaboradores com fotos e links)
+Anderson Barbosa Junior
+Agnes Maria Varela
+Kelvin Rodrigues dos Santos
+Lorena Ribeiro dos Santos
+João Cardia
 
 ##  Licença
 
-... (Indicação da licença do projeto)
+Este projeto está licenciado por Agnes e Junior, peça licença a eles.
