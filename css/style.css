@@ -50,16 +50,18 @@ header {
 }
 .corpocalendar{
   display: flex;
+  justify-content: center;
   color: #fafafa;
   
 
 } 
 .corpocalendar div{
   border-radius: 16px;
-  width: 250px;
-  height: 150px;
+  width: 200px;
+  height: 120px;
   align-content: center;
   text-align: center;
+  padding: 2%;
 }
 .corpocalendar .orange{
   margin: 4%;
@@ -68,20 +70,27 @@ header {
   
 }
 .corpocalendar .purple{
-  
+  margin: 4%;
   background-color: #88085B;
   border: #DD660A solid 0.4px;
  
 
 } 
 .corpocalendar .lunch{
-  
+  margin: 4%;
   background-color: #dd660a;
   color: #fafafa;
   border: #000000 solid 0.4px;
 }
 #d20, #d21, #d22{
  margin-left: 20px;
+}
+
+.containercalendar{
+  margin-left: 5%;
+}
+.containercalendar span{
+  color: #DD660A;
 }
 /*Main submission e listener*/
 
