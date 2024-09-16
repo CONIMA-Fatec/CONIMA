@@ -609,7 +609,7 @@ footer .org img:not(:last-child) {
       }
     }
   /* Estilos para PCs */
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     /*main calendar*/
    .calendarcontainer{
     display: flex;
