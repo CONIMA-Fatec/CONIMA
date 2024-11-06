@@ -1,46 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#88085B"/>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/keynotes.css">
-  <link rel="shortcut icon" type="image/svg" href="assets/icon/favicon.svg"/>
-  <title>Participantes</title>
-</head>
+<?php include 'include/head.php'; ?>
 <style>
   body{background: linear-gradient(0deg, rgba(136, 8, 91, 1) 9%, rgba(221, 102, 10, 1) 100%);}
 </style>
 <body>
-  <nav class="mobile-nav">
-    <div class="nav-buttons">
-      <a href="submission.html" class="nav-button"><img src="assets/icon/subm.png" alt="Submissão de Artigos"></a>
-      <a href="index.html" class="nav-button"><img src="assets/icon/icon-conin.png" alt=""></a>
-      <a href="#" class="nav-button" id="menu-button"><img src="assets/icon/menu.png" alt="Menu"></a>
-    </div>
-    <div class="menu-list" id="menu-list">
-      <a href="cronogram.html">Calendário</a>
-      <a href="keynotes.html">Participantes</a>
-      <a href="submission.html">Submissão de Artigos</a>
-      <a href="listener.html">Inscrição Ouvinte</a>
-      <a href="hackatec.html">Inscrição HackaTec</a>
-      <a href="about.html">Sobre</a>
-      <a id="close-button">Fechar</a>
-    </div>
-  </nav>
-  <nav class="desktop-nav">
-    <a href="index.html" class="nav-logo"> <span><img src="assets/Logo/CONINMA 1.png" alt=""></span></a>
-    <div class="nav-links">
-      <a href="cronogram.html" class="nav-button">Calendário</a>
-      <a href="keynotes.html" class="nav-button">Participantes</a>
-      <a href="submission.html" class="nav-button">Submissão de Artigos</a>
-      <a href="listener.html" class="nav-button">Inscrição Ouvinte</a>
-      <a href="hackatec.html" class="nav-button">Inscrição HackaTec</a>
-      <a href="about.html" class="nav-button">Sobre</a>
-    </div>
-  </nav>
+<?php include 'include/nav.php'; ?>
   <header>
     <div class="subtitle"><h1>Sobre os Participantes</h1></div>
   </header>
@@ -171,42 +136,7 @@
 </div>
     </section>
     </main> 
-    <footer>
-      <section class="logoFooter">
-        <img src="assets/footer/coninma-white.png" alt="">
-        <h6>Conferência de Softwares Inteligentes e Aplicações de Aprendizado de Máquina</h6>
-      </section>
-      <section class="social-media">
-        <h6>Redes Sociais</h6>
-        <div>
-          <img src="assets/social/instagram-white.png" alt="">
-          <img src="assets/social/linkedin-white.png" alt="">
-          <img src="assets/social/youtube-white.png" alt="">
-        </div>
-      </section>
-      <section class="org">
-        <h6>Organização</h6>
-        <div>
-          <img src="assets/org/cps_white.png" alt="">
-          <img src="assets/org/dsm_white.png" alt="">
-          <img src="assets/org/fatec_white.png" alt="">
-        </div>
-      </section>
-    </footer>
-
-  <script rel="script" href="js/script.js">
-    // Função para alternar a visibilidade do menu ao clicar no botão do menu
-    document.getElementById('menu-button').addEventListener('click', function () {
-      var menuList = document.getElementById('menu-list');
-      menuList.style.display = (menuList.style.display === 'block') ? 'none' : 'block';
-    });
-
-    // Função para fechar o menu ao clicar no botão "Fechar"
-    document.getElementById('close-button').addEventListener('click', function () {
-      var menuList = document.getElementById('menu-list');
-      menuList.style.display = 'none';
-    });
-  </script>
+<?php include 'include/footer.php'; ?>
 </body>
 
 </html>
