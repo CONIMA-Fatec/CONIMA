@@ -1,10 +1,39 @@
+<?php
+include "includes/funcoes.php";
+include "conexao.php"; 
+// Consulta ao banco de dados
+$sql = "SELECT data_fim FROM evento WHERE id = 2;";
+$comando = $pdo->query($sql); 
+$comando->execute();
+$resultado = $comando->fetch(PDO::FETCH_ASSOC); 
+// Função de contagem regressiva
+function contagemRegressiva($dataFinal) {
+    $timestampFinal = strtotime($dataFinal);
+    $timestampAtual = time();
+    $diferenca = $timestampFinal - $timestampAtual;
+
+    if ($diferenca <= 0) {
+        return array('dias' => 0, 'horas' => 0, 'minutos' => 0);
+    } else {
+        $dias = floor($diferenca / (60 * 60 * 24));
+        $horas = floor(($diferenca % (60 * 60 * 24)) / (60 * 60));
+        $minutos = floor(($diferenca % (60 * 60)) / 60);
+        return array('dias' => $dias, 'horas' => $horas, 'minutos' => $minutos);
+    }
+}
+
+$resultadoContagem = contagemRegressiva($resultado['data_fim']); 
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
-<?php include 'include/head.php'; ?>
+<?php include 'include/head.php'; 
+
+?>
 <style>
   body{background: linear-gradient(0deg, rgba(136, 8, 91, 1) 9%, rgba(221, 102, 10, 1) 100%)}
 </style>
-<body onload="updateCountdown()">
+<body>
 <?php include 'include/nav.php'; ?>
   <header>
   </header>
@@ -15,19 +44,24 @@
       </div>
       <section class="slidehome">
         <section class="contagem-regress" >
-          <div class="countdown-container">
-            <div class="countdown-item">
-              <div id="days" class="countdown-number">00</div>
-              <div class="countdown-label">dias</div>
-            </div>
-            <div class="countdown-item">
-              <div id="hours" class="countdown-number">00</div>
-              <div class="countdown-label">horas</div>
-            </div>
-            <div class="countdown-item">
-              <div id="minutes" class="countdown-number">00</div>
-              <div class="countdown-label">minutos</div>
-            </div>
+        <div class="countdown-container">
+        <div class="countdown-item">
+            <div class="countdown-number" id="days"></div>
+            <div class="countdown-label"> <?= $resultadoContagem['dias'] ?> dias</div>
+        </div>
+        </div>
+        <div class="countdown-container">
+        <div class="countdown-item">
+            <div class="countdown-number" id="hours"></div>
+            <div class="countdown-label"> <?= $resultadoContagem['horas'] ?> horas</div>
+        </div>
+        </div>
+        <div class="countdown-container">
+        <div class="countdown-item">
+            <div class="countdown-number" id="minutes"></div>
+            <div class="countdown-label"> <?= $resultadoContagem['minutos'] ?> minutos</div>
+        </div>
+        </div>
         </section>
         <div class="imagens">
           <img src="assets/keynotes/FernandoPaes.JPG" alt="">
@@ -56,40 +90,10 @@
       
     </aside>
   </main>
-  <?php include 'include/footer.php'; ?>
+  <?php include 'include/footer.php'; 
+ 
+  ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script rel="script" href="js/script.js">
-
-     //Contador
-
-    // Definindo a data final da contagem regressiva (formato: ano, mês - 1, dia, hora, minuto, segundo)
-    function updateCountdown() {
-      var endDate = new Date(2024, 9, 18, 0, 0,);
-      var now = new Date();
-      var timeDiff = endDate - now;
-
-      if (timeDiff <= 0) {
-        document.getElementById('days').innerText = '00';
-        document.getElementById('hours').innerText = '00';
-        document.getElementById('minutes').innerText = '00';
-      } else {
-        var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((timeDiff % (1000* 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-
-        document.getElementById('days').innerText = padZero(days);
-        document.getElementById('hours').innerText = padZero(hours);
-        document.getElementById('minutes').innerText = padZero(minutes);
-      }
-    }
-
-    function padZero(num) {
-      return (num < 10 ? '0' : '') + num;
-    }
-
-    // Atualizando a contagem regressiva a cada segundo
-    setInterval(updateCountdown, 1000);
-  </script>
 </body>
 
 </html>

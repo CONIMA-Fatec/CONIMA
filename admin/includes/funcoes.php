@@ -14,4 +14,12 @@ function autenticar(){
         header("Location: login.php");
     }
 }
+
+function buscarEdicoes() {
+    global $pdo;
+    $sql = "SELECT id, nome FROM evento";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
 ?>

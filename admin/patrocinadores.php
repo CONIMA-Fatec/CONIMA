@@ -7,43 +7,38 @@ foreach ($files as $file) {
         include $dir . $file;
     }
 }
-
+session_start();
 autenticar(); // Certifique-se de que o usuário está autenticado
-buscarEdicoes();
-?>
+buscarEdicoes(); //serve para buscar as edições do coninma está no arquivo funcoes.php
 
-<header> <h2>Cadastrar Convidado</h2> </header>
+?>
+<header> <h2>Cadastrar Patrocinadores</h2> </header>
+<main>
     <section>
-    <form method="POST" action="includes/busca/buscar_participantes.php" class="buscar">
+    <form method="POST" action="includes/busca/buscar_patrocionadores.php" class="buscar">
     <div class="form-group">
-        <input type="text" name="termo_busca" placeholder="Digite o nome do convidado">
+        <input type="text" name="termo_busca" placeholder="Digite o nome do patrocinador">
     </div>
     <div class="form-group" style="text-align: center;">
         <button type="submit">Buscar</button> <button type="submit">Listar</button>
     </div>
+
     </form>
     </section>
-   
-   <form method="POST" enctype="multipart/form-data" action="includes/cadastrar/cadastrar_participante.php" class="cadastrarParticipante">
+    <section>
+    <form method="POST" enctype="multipart/form-data" action="includes/cadastrar/cadastrar_patrocinadores.php" class="cadastrarParticipante">
        <div class="form-group">
            <label for="nome">Nome:</label>
            <input type="text" id="nome" name="nome" required>
        </div>
        <div class="form-group">
-           <label for="descricao">Descrição:</label>
-           <textarea id="descricao" name="descricao"   
-maxlength="2000" required></textarea>
+           <label for="tipo_patrocinio">Tipo:</label> 
+           <select id="tipo_patrocinio" name="tipo_patrocinio" required>
+                <option value="patrocinadores">Patrocinadores</option>
+                <option value="apoio">Apoio</option>
+                <option value="intituicoesParceiras">Intituições Parceiras</option>
+            </select>
        </div>
-       <div class="form-group">
-           <label for="formacao">Formação:</label>
-           <input type="text" id="formacao" name="formacao" required>
-       </div>
-       <div class="form-group">
-           <label for="instituicao">Instituição:</label>   
-
-           <input type="text" id="instituicao" name="instituicao" required>
-       </div>
-       <div class="form-group">
        <div class="form-group">
         <label for="edicao_evento">Edição do Evento:</label>
             <select name="edicao_evento" id="edicao_evento">
@@ -56,22 +51,24 @@ maxlength="2000" required></textarea>
             </select>
        </div>
        <div class="form-group">
-           <label for="foto">Foto:</label>
+           <label for="foto">Logo:</label>
            <input type="file" id="foto" name="foto" accept="image/png, image/jpeg" required>
        </div>  
        <div class="form-group">
-           <label for="altimg">Texto Alternativo da Imagem:</label>
-           <textarea id="altimg" name="altImg"   
-maxlength="2000" required></textarea>
-<br>
-<br>
-<div class="form-group" id="botoes">
+           <label for="altimg">Texto Alternativo da logo:</label>
+           <textarea id="altimg" name="altImg" maxlength="2000" required></textarea>
+           <br>
+           <br>
+           <div class="form-group" id="botoes">
             <button type="submit">Cadastrar</button>
             <a href="admin.php" class="back">Voltar ao Painel</a>
         </div>
-        
       
    </form>
+    </section>
+   
+</main>
+    
         
 </body>
 </html>

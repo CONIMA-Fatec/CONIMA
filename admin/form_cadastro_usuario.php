@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuário</title>
-</head>
+<?php
+$dir = 'includes/';
+$files = scandir($dir);
+
+foreach ($files as $file) {
+    if (pathinfo($file, PATHINFO_EXTENSION) === 'php') {
+        include $dir . $file;
+    }
+}
+?>
 <body>
     <h2>Cadastro de Usuário</h2>
-    <form method="POST" action="processa_cadastro.php">
+    <form method="POST" action="processa_cadastro.php" class="cadastrarParticipante">
         <label for="nome">Nome Completo:</label><br>
         <input type="text" id="nome" name="nome" required><br><br>
 
@@ -24,7 +27,7 @@
         <div>
             <label>
                 <input type="checkbox" name="termo_aceite" required>
-                Aceito os termos de uso da imagem
+                <p>Aceito os termos de uso da imagem</p>
             </label>
         </div>
         <div>  
@@ -70,5 +73,5 @@
         </div>
     </form>
 </body>
-<script src="validar_cpf"></script>
+<script src="includes/validar_cpf.js"></script>
 </html>

@@ -1,6 +1,7 @@
 <?php
-session_start();
 include "conexao.php";
+session_start();
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = htmlspecialchars($_POST['username']);
@@ -17,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($usuario) {
         $_SESSION['usuario_id'] = $usuario['id']; // Armazena o ID do usuário na sessão
-        header("Location: admin.php");
+        header("Location: ../admin.php");
         exit;
     } else {
         $error = "Usuário ou senha inválidos.";

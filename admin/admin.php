@@ -1,7 +1,12 @@
 <?php
-// include "conexao.php";
-include "funcoes.php";
+$dir = 'includes/';
+$files = scandir($dir);
 
+foreach ($files as $file) {
+    if (pathinfo($file, PATHINFO_EXTENSION) === 'php') {
+        include $dir . $file;
+    }
+}
 session_start();
 autenticar();
 
@@ -16,7 +21,8 @@ autenticar();
 </head>
 <body>
     <header>
-        Administração do Site
+        Administração do Site <br>
+        <a href="admin.php?logout=true" style="color: white;">Logout</a>
     </header>
     <div class="dashboard">
         <h3>Painel de Inscrições</h3>
@@ -25,14 +31,8 @@ autenticar();
     </div>
     <main>
         <h2>Painel Administrativo</h2>
-        <nav>
-            <button onclick="window.location.href='participante.php'">Participante</button>
-            <button onclick="window.location.href='edicao.php'">Edição</button>
-            <button onclick="window.location.href='patrocinadores.php'">Patrocinadores</button>
-            <button onclick="window.location.href='usuarios.php'">Gerenciar Usuários</button>
-        </nav>
-        <br>
-        <a href="admin.php?logout=true">Logout</a>
+
+        
     </main>
 </body>
 </html>
